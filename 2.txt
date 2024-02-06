@@ -1,0 +1,12 @@
+1. Write a Python program to create a CSV file to store Eno, Ename and Salary. And display all the records store in csv file.
+code:
+import csv
+
+with open('profiles1.csv', 'w') as file:
+    writer = csv.writer(file)
+    field = ["eno", "ename", "salary"]
+    
+    writer.writerow(field)
+    writer.writerow(["1","ayush", "2000"])
+    writer.writerow(["2","nischay", "388"])
+    writer.writerow(["3","manas", "123"])

@@ -1,0 +1,35 @@
+Write a Python Program to read a text file "story.txt" to count how many vowels and consonants present in your file.
+story.txt?
+code:
+def counting(filename): 
+txt_file = open(filename, "r") 
+vowel = 0
+line = 0
+character = 0
+vowels_list = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'] 
+	for alpha in txt_file.read(): 
+		if alpha in vowels_list: 
+			vowel += 1
+		elif alpha not in vowels_list and alpha != "\n": 
+			character += 1
+			
+		elif alpha == "\n": 
+			line += 1 
+	print("Number of vowels in ", filename, " = ", vowel) 
+	print("New Lines in ", filename, " = ", line) 
+	print("Number of characters in ", filename, " = ", character) 
+counting('Myfile.txt')
+
+Create table store (storeid integer not null primary key,storename varchar (20), location varchar (20),noofemployee integer)
+
+Write the SQL query for questions from (i) to (v)
+i) Display the details of Store table whose Location is Delhi and have number of employees greater than 50.
+ii) Display Storename and Customer name from store and order table.
+iii) Display the store name and location who having Maximum number of employees.
+iv) Update the location of employee who living in Chennai to Kolkata.
+
+answers:
+1.
+2.
+3.
+4.
